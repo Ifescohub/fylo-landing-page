@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --font-1: 'Open Sans', sans-serif;
+    --font-2: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+/* GLOBAL ------- */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+h1, 
+h2, 
+h3{
+    font-family: var(--font-2);
+    font-weight: 700;
+}
+
+h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+input[type="email"]{
+    height: 2.5rem;
+    padding: 1rem 0.7rem;
+    font-size: 11px;
+    opacity: 0.5;
+    margin: 2rem 0.5rem 2rem 0;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    padding: 13px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.6;
+}
+
+body{
+    font-family: var(--font-1);
+    font-size: 15;
+    font-weight: 400;
+    color: var(--Very-Dark-Blue);
+    line-height: 1.5;
+}
+
+
+/* HEADER SECTION -------- */
+header{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 2rem 4rem;
+    margin: 0 auto 5rem;
+}
+
+/* Navigation  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.logo{
+    width: 9rem;
+    height: 3rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 14px;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+/* Hero section  */
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem auto;
+}
+
+.hero-image{
+    width: 50%;
+    height: 100%;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-description{
+    width: 50%;
+    align-self: center;
+    padding-right: 2rem;
+}
+
+.hero-form input[type="email"]{
+    width: 50%;
+}
+
+.hero-form input[type="submit"]{
+    background: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    padding: 13px 30px;
+}
+
+
+/* MAIN SECTION --------------- */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 1rem auto 0;
+}
+
+/* Curvey Background  */
+.curvy-bg{
+    display: flex;
+    align-items: flex-end;
+}
+
+.curvy-bg .mobile{
+    display: none;
+}
+
+/* Section  */
+main section{
+    display: flex;
+    flex-direction: row-reverse;
+    place-items: center;
+    padding: 2rem 3rem 1rem;
+    background: var(--Light-Grayish-Blue);
+}
+
+.section-image{
+    width: 50%;
+    text-align: right;
+}
+
+.section-image img{
+    max-width: 100%;
+    width: 28rem;
+}
+
+article{
+    width: 50%;
+}
+
+.details h1{
+    font-size: 2rem;
+}
+
+.details p{
+    padding: 0 2rem 0.8rem 0;
+}    
+
+.details .link a{
+    vertical-align: 3px;
+    font-size: 14px;
+    color: var(--Moderate-Cyan);
+}
+
+hr{
+    width: 9.2rem;
+    border: 0.5px solid var(--Moderate-Cyan);
+    margin-top: -1rem;
+}
+
+.details .link:hover{
+    opacity: 0.7;
+}
+
+/* Testimonial  */
+.testimonial{
+    width: 21rem;
+    background: white;
+    font-size: 13px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 var(--Light-Gray);
+    margin: 1.5rem 0;
+}
+
+.avatar{
+    margin-top: 1rem;
+    line-height: 1.2;
+}
+
+.avatar img{
+    border-radius: 50%;
+    width: 2rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.profile{
+    font-size: 9.5px;
+    padding-top: 0.3rem;
+}
+
+
+/* CALL TO ACTION ---------- */
+aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background: var(--Desaturated-Blue);
+    padding: 2rem;
+    color: var(--Light-Grayish-Blue);
+}
+
+.cta{
+    width: 50%;
+    padding: 3rem;
+}
+
+.cta p{
+    padding: 1rem 2rem 0 0;
+    font-size: 15px;
+}
+
+.cta-form{
+    width: 50%;
+    padding: 2rem;
+}
+
+.cta-form input[type="email"]{
+    width: 80%;
+    background-color: var(--Light-Grayish-Blue);
+    opacity: 1;
+    margin: 0 0 0.8rem 0;
+}
+
+.cta-form input[type="submit"]{
+    background: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+}
+
+
+/* FOOTER --------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin: auto;
+    background: var(--Very-Dark-Blue);
+    color: var(--Light-Grayish-Blue);
+    font-size: 15px;
+}
+
+.footer-logo img{
+    width: 9rem;
+    height: 3rem;
+    margin: 1rem 0;
+    filter: invert(10);
+}
+
+.widget{
+    display: flex;
+    justify-content: space-between;
+}
+
+.address p{
+    padding: 1rem 0 0;
+}
+
+.address p img{
+    margin-right: 1.3rem;
+}
+
+.footer-menu li{
+    padding-bottom: 1rem;
+}
+
+.footer-menu li:hover{
+    color: hsl(224, 100%, 30%);
+}
+
+ion-icon{
+    font-size: 16px;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    border: 1px solid var(--Light-Grayish-Blue);
+    border-radius: 50%;
+}
+
+ion-icon:hover{
+   border-color: hsl(224, 100%, 30%);
+   color: hsl(224, 100%, 30%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 1rem 0 -3rem 0;
+}
+
+.attribution a { 
+    color: var(--Moderate-Cyan); 
+}
+
+.attribution a:hover { 
+    text-decoration: overline; 
+}
+
+
+@media (max-width: 850px) {
+    
+    /* Hero section  */
+    .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+    
+    .hero-image{
+        width: 100%;
+    }
+    
+    .hero-image img{
+        width: 40rem;
+        max-width: 100%;
+    }
+    
+    .hero-description{
+        width: 100%;
+        align-self: center;
+        padding: 2rem;
+    }
+    
+    .hero-form input[type="email"]{
+        width: 80%;
+        font-size: 14px;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-form input[type="submit"]{
+        padding: 15px 30px;
+        width: 80%;
+    }
+    
+    /* Seection  */
+    main section{
+        flex-direction: column;
+    }
+    
+    .section-image{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section-image img{
+        max-width: 100%;
+        width: 35rem;
+    }
+    
+    article{
+        width: 100%;
+    }
+    
+    .details h1{
+        text-align: center;
+    }
+    
+    .details p{
+        padding: 0 3rem 0.8rem 3rem;
+    } 
+    
+    .details .link{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    hr{
+        margin: -1rem auto 0;
+    }
+    
+    /* Testimonial  */
+    .testimonial{
+        width: 23rem;
+        font-size: 14px;
+        margin: 2rem auto;
+    }
+    
+    .profile{
+        font-size: 10px;
+        padding-top: 0.3.5rem;
+    }
+    
+    
+    /* CALL TO ACTION ---------- */
+    .cta{
+        padding: 1rem;
+    }
+    
+    .cta p{
+        padding: 1rem 1rem 0 0;
+        font-size: 14px;
+    }
+    
+    .cta-form{
+        padding: 0.5rem;
+    }
+    
+    .cta-form input[type="email"]{
+        width: 100%;
+    }
+    
+    /* FOOTER --------------------- */
+    footer{
+        padding: 2rem;
+        font-size: 13px;
+    }
+    
+    .footer-logo img{
+        width: 7rem;
+        height: 2rem;
+    }
+    
+    .attribution { 
+        margin: 1rem 0 0;
+    }
+}
+
+
+@media (max-width: 635px) {
+
+    /* HEADER SECTION -------- */
+    header{
+        padding: 2rem;
+    }
+
+    /* Navigation  */
+    .logo{
+        width: 6rem;
+        height: 1.5rem;
+    }
+
+    .menu{
+        font-size: 13px;
+        gap: 1.3rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Hero section  */
+    .hero-description{
+        padding: 1rem;
+    }
+    
+    .hero-form input[type="email"]{
+        width: 90%;
+    }
+    
+    .hero-form input[type="submit"]{
+        width: 90%;
+    }
+
+
+    /* Curvey Background  */
+    .curvy-bg .desktop{
+        display: none;
+    }
+
+    .curvy-bg .mobile{
+        display: unset;
+        width: 100%;
+        min-width: 97vw;
+    }
+    
+    /* Section  */        
+    .details h1{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    .details p{
+        padding: 0 1rem 0.8rem 1rem;
+        font-size: 15px;
+    } 
+    
+    /* Testimonial  */
+    .testimonial{
+        max-width: 90%;
+    }
+    
+    /* CALL TO ACTION ---------- */
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 2rem;
+    }
+    
+    .cta{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .cta p{
+        padding: 1rem;
+        font-size: 14px;
+    }
+    
+    .cta-form{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .cta-form input[type="email"]{
+        width: 80%;
+    }
+
+    .cta-form input[type="submit"]{
+        width: 80%;
+    }
+    
+/* FOOTER --------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin: auto;
+    font-size: 15px;
+}
+
+.footer-logo img{
+    width: 9rem;
+    height: 3rem;
+    margin: 1rem 0;
+    filter: invert(10);
+}
+
+.widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.address{
+    margin-bottom: 1.5rem;
+}
+
+.footer-menu {
+    margin: 0.7rem 0;
+}
+
+.footer-icon{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 1rem 0 -1rem 0;
+
+
+}
+
+
+
+
