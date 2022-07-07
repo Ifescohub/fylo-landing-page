@@ -182,7 +182,7 @@ article{
     width: 50%;
 }
 
-.details h1{
+.details h2{
     font-size: 2rem;
 }
 
@@ -398,7 +398,7 @@ ion-icon:hover{
         width: 100%;
     }
     
-    .details h1{
+    .details h2{
         text-align: center;
     }
     
@@ -511,7 +511,7 @@ ion-icon:hover{
     }
     
     /* Section  */        
-    .details h1{
+    .details h2{
         margin-top: 2rem;
         text-align: center;
         font-size: 1.3rem;
@@ -603,5 +603,3 @@ footer{
 }
 
 }
-
-
