@@ -370,12 +370,13 @@ ion-icon:hover{
         width: 80%;
         font-size: 14px;
         height: 3rem;
-        margin-bottom: 1rem;
+        margin: 1rem auto;
     }
     
     .hero-form input[type="submit"]{
         padding: 15px 30px;
         width: 80%;
+        margin: auto;
     }
     
     /* Seection  */
@@ -466,7 +467,7 @@ ion-icon:hover{
 
     /* HEADER SECTION -------- */
     header{
-        padding: 2rem;
+        padding: 2rem 1rem;
     }
 
     /* Navigation  */
@@ -477,13 +478,17 @@ ion-icon:hover{
 
     .menu{
         font-size: 13px;
-        gap: 1.3rem;
+        gap: 1rem;
         margin-bottom: 3rem;
     }
 
     /* Hero section  */
     .hero-description{
-        padding: 1rem;
+        padding: 0;
+    }
+
+    .hero-description h1{
+        font-size: 1.8rem;
     }
     
     .hero-form input[type="email"]{
@@ -493,7 +498,6 @@ ion-icon:hover{
     .hero-form input[type="submit"]{
         width: 90%;
     }
-
 
     /* Curvey Background  */
     .curvy-bg .desktop{
@@ -508,12 +512,13 @@ ion-icon:hover{
     
     /* Section  */        
     .details h1{
+        margin-top: 2rem;
         text-align: center;
         font-size: 1.3rem;
     }
     
     .details p{
-        padding: 0 1rem 0.8rem 1rem;
+        padding: 0 0.5rem 0.8rem 0;
         font-size: 15px;
     } 
     
@@ -530,7 +535,7 @@ ion-icon:hover{
         align-items: center;
         text-align: center;
         margin: auto;
-        padding: 2rem;
+        padding: 1.5rem;
     }
     
     .cta{
@@ -595,10 +600,8 @@ footer{
     font-size: 11px; 
     text-align: center; 
     margin: 1rem 0 -1rem 0;
-
-
 }
 
-
+}
 
 
